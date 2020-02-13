@@ -90,6 +90,7 @@ namespace DatingApp.API
             }
             else
             {
+                
                 app.UseExceptionHandler(builder => {
                     builder.Run(async context => {
                         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
@@ -105,7 +106,8 @@ namespace DatingApp.API
                 });
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHsts();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

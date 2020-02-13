@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b5f967b5-b848-4fc9-abba-4e04035f4e3c/resourceGroups/DatingAppResourceGroup/providers/Microsoft.Web/sites/dappstef",
+    "appService.deploySubpath": "DatingApp.API\\bin\\Release\\netcoreapp3.0\\publish"
+}
